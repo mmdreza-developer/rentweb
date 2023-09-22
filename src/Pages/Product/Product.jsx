@@ -6,7 +6,7 @@ import Footer from "../../Components/Footer/Footer"
 import { NavLink, useParams, Link, Outlet } from 'react-router-dom'
 export default function Product() {
   const params = useParams()
-  console.log(params);
+  // console.log(params);
   return (
     <div>
       <Header />
@@ -18,8 +18,8 @@ export default function Product() {
         ]
       } />
       <div className="container text-gray">
-        <h1 className="text-3xl text-dark my-12">
-          تایتل محصول
+        <h1 className="text-3xl text-center text-dark my-12">
+          محصول {params.productID}
         </h1>
         <div>
           <div className="flex gap-4 my-5">
@@ -32,75 +32,75 @@ export default function Product() {
           </div>
 
         </div>
-        <Outlet/>
-        
+        <Outlet />
+
         {/* / */}
-        <div className="flex gap-6 mt-10">
-          <div className="gap-4 hidden md:flex">
-            <div className="flex flex-col gap-x-4">
-              <div className="pb-4 flex gap-4 border-b-2 border-dashed border-gray">
-                <div className="flex flex-col gap-y-2 items-center text-2xl">
-                  <span> تعداد فروش</span>
-                  <span className="text-orange-500 font-medium">450</span>
-                </div>
-                <div className="flex flex-col gap-y-2 items-center text-2xl">
-                  <span>
-                    رضایت مشتری
-                  </span>
-                  <span className="text-green font-medium">90%</span>
+            <div className="flex gap-6 mt-10">
+              <div className="gap-4 hidden md:flex">
+                <div className="flex flex-col gap-x-4">
+                  <div className="pb-4 flex gap-4 border-b-2 border-dashed border-gray">
+                    <div className="flex flex-col gap-y-2 items-center text-2xl">
+                      <span> تعداد فروش</span>
+                      <span className="text-orange-500 font-medium">234</span>
+                    </div>
+                    <div className="flex flex-col gap-y-2 items-center text-2xl">
+                      <span>
+                        رضایت مشتری
+                      </span>
+                      <span className="text-green font-medium">90%</span>
+                    </div>
+                  </div>
+                  <div className="mt-3 flex flex-col gap-y-2 ">
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">آخرین نسخه انتشار</span>
+                      <span>1401/10/03</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">اخرین بروز رسانی</span>
+                      <span>1401/10/03</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">چیدمان</span>
+                      <span></span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">ورژن</span>
+                      <span>1.1.1</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">دسته بندی</span>
+                      <span>سایت شرکتی</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-dark text-lg">موضوع</span>
+                      <span>سایت حرفه ایی</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="mt-3 flex flex-col gap-y-2 ">
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">آخرین نسخه انتشار</span>
-                  <span>1401/10/03</span>
+              <div className="grid grid-cols-2 gap-6 grow">
+                <div className="col-span-2 mt-2 flex flex-col gap-2">
+                  <div className="text-xl font-medium">صفحه اصلی</div>
+                  <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">اخرین بروز رسانی</span>
-                  <span>1401/10/03</span>
+                <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
+                  <div className="text-xl font-medium">صفحه اصلی</div>
+                  <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">چیدمان</span>
-                  <span></span>
+                <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
+                  <div className="text-xl font-medium">صفحه اصلی</div>
+                  <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">ورژن</span>
-                  <span>1.1.1</span>
+                <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
+                  <div className="text-xl font-medium">صفحه اصلی</div>
+                  <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">دسته بندی</span>
-                  <span>سایت شرکتی</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-dark text-lg">موضوع</span>
-                  <span>سایت حرفه ایی</span>
+                <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
+                  <div className="text-xl font-medium">صفحه اصلی</div>
+                  <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
                 </div>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-6 grow">
-            <div className="col-span-2 mt-2 flex flex-col gap-2">
-              <div className="text-xl font-medium">صفحه اصلی</div>
-              <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
-            </div>
-            <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
-              <div className="text-xl font-medium">صفحه اصلی</div>
-              <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
-            </div>
-            <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
-              <div className="text-xl font-medium">صفحه اصلی</div>
-              <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
-            </div>
-            <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
-              <div className="text-xl font-medium">صفحه اصلی</div>
-              <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
-            </div>
-            <div className="col-span-2 lg:col-span-1 mt-2 flex flex-col gap-2">
-              <div className="text-xl font-medium">صفحه اصلی</div>
-              <img src="/images/card/10.jpg" className="w-full h-auto" alt="" />
-            </div>
-          </div>
-        </div>
       </div>
       <Footer />
     </div>
