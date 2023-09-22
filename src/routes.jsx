@@ -9,6 +9,7 @@ import ProductDetails from "./Components/ProductDetails/ProductDetails"
 import Product from "./Pages/Product/Product"
 import Profile from "./ComponentsPanel/Profile/Profile"
 import Nothing from "./ComponentsPanel/Nothing/Nothing"
+import Store from "./Pages/Store/Store"
 
 
 const routes = [
@@ -32,5 +33,6 @@ const routes = [
             { path: "login-username", element: <LoginUserName /> },
         ]
     },
+    { path: "/store", element: <Store /> }
 ]
 export default routes

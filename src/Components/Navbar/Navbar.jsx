@@ -23,7 +23,7 @@ export default memo(function Navbar() {
             </div>
           <div className='flex items-center gap-x-2'>
             <Link to="/panel/profile" className='text-orange-500 hidden lg:block'>آکادمی</Link>
-            <Link to="" className='p-2 bg-whiteSky text-white flex items-center gap-x-2 rounded'><MdAddShoppingCart className='text-2xl' />
+            <Link to="/store" className='p-2 bg-whiteSky text-white flex items-center gap-x-2 rounded'><MdAddShoppingCart className='text-2xl' />
             </Link>
             <Link to="" className='p-2 bg-orange-500 hover:bg-orange-600 transition duration-500 text-white flex items-center gap-x-2 rounded'>
               <FaRegUserCircle className='text-2xl' />

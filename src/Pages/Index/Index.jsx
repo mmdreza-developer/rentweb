@@ -17,7 +17,7 @@ export default function Index() {
       <SectionHeader title="طراح های پیشنهادی" btnTitle="مشاهده همه" />
       <div className="container mb-5z">
         <div className="grid grid-cols-1 px-6 sm:p-0 sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center">
-          {data && data.map(item => (
+          {data.productData && data.productData.map(item => (
             <Card {...item} />
           ))}
         </div>

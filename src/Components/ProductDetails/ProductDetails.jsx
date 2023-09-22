@@ -9,7 +9,7 @@ export default function ProductDetails() {
   const params = useParams().productID
   console.log(params);
   // console.log("ProductDetails");
-  const isActiveItem = data.filter(item => item.id == params)
+  const isActiveItem = data.productData.filter(item => item.id == params)
   console.log(isActiveItem);
   return (
     <>
