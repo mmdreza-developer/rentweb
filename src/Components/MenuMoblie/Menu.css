@@ -1,0 +1,17 @@
+.menu-mobile {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: 0.8s ease;
+}
+
+.open-menu {
+    right: 0;
+}
+
+.close-menu {
+    right: -400px;
+
+}

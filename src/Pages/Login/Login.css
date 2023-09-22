@@ -1,0 +1,6 @@
+.tap-login a.active {
+    border-bottom: 2px solid #FF7143;
+    background: transparent;
+    color: #FF7143;
+
+}
