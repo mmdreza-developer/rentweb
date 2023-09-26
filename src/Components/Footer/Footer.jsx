@@ -7,7 +7,7 @@ export default memo(
   function Footer() {
     console.log("footer");
     return (
-      <div className='mt-8 pt-24 p-12 md:px-24 bg-white text-gray'>
+      <div className='mt-8  pt-12 md:px-24 bg-white text-gray'>
         <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
           <div iv className='flex flex-col gap-y-4'>
             <div className='flex gap-x-4 text-2xl justify-center'>
@@ -62,22 +62,22 @@ export default memo(
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 mt-4 gap-2">
                 <div>
-                  <img src="/images/enamad.webp" alt="" />
+                  <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
                 <div>
-                  <img src="/images/enamad.webp" alt="" />
+                  <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
                 <div>
-                  <img src="/images/enamad.webp" alt="" />
+                  <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
                 <div>
-                  <img src="/images/enamad.webp" alt="" />
+                  <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className='text-center p-2'>کلیه حقوق این سایت متعلق به رنت پرس می باشد</div>
+        <div className='text-center pt-2'>کلیه حقوق این سایت متعلق به رنت پرس می باشد</div>
       </div>
     )
   }

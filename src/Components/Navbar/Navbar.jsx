@@ -19,8 +19,8 @@ export default memo(function Navbar() {
         <div className='flex justify-between items-center'>
           <div className='flex gap-x-6 items-center'>
             <button onClick={openMenu} className='block md:hidden'><FaBars className='w-8 h-8 text-gray' /></button>
-            <img className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/images/logo.png" alt="" />
-            </div>
+            <Link to="/"><img className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="/images/logo.png" alt="" /></Link>
+          </div>
           <div className='flex items-center gap-x-2'>
             <Link to="/panel/profile" className='text-orange-500 hidden lg:block'>آکادمی</Link>
             <Link to="/store" className='p-2 bg-whiteSky text-white flex items-center gap-x-2 rounded'><MdAddShoppingCart className='text-2xl' />

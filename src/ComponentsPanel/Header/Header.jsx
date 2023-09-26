@@ -11,8 +11,8 @@ export default function Header() {
     }
     return (
         <div className=' flex justify-between p-2 w-full items-center'>
-            <div className='flex gap-x-4 items-center text-3xl'><FaBars className='text-dark cursor-pointer lg:hidden' onClick={openMenu} />
-                <img src="/images/logo.png" width={60} alt="" /></div>
+            <Link to="/" className='flex gap-x-4 items-center text-3xl'><FaBars className='text-dark cursor-pointer lg:hidden' onClick={openMenu} />
+                <img src="/images/logo.png" width={60} alt="" /></Link>
             <div>
                 <Link to="/login/login-number">
                     <FiLogOut className='text-3xl text-dark' />

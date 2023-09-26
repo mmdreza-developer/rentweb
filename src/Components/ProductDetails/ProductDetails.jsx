@@ -1,16 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { MdOutlineMonitor } from "react-icons/md";
 import { BsFillShareFill, BsHeart } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx"
 import { useParams } from 'react-router-dom';
 import data from '../../data';
+import { contextData } from '../../ContextData/ContextData';
 export default function ProductDetails() {
   const [range, setRange] = useState(25)
+  const [isDisabled, setIsDisabled] = useState(false)
   const params = useParams().productID
   console.log(params);
   // console.log("ProductDetails");
+  const { state, dispatch } = useContext(contextData)
   const isActiveItem = data.productData.filter(item => item.id == params)
   console.log(isActiveItem);
+  console.log(isDisabled);
+  const addToCard = (item) => {
+
+    dispatch({ type: "ADD_PRODUCT", payload: item })
+    // const isProduct = data.productData.find(product => product.id === item.id)
+    // if (isProduct) {
+    //   dispatch({ type: "INCREASE_PRODUCT", payload: isProduct })
+    // } else {
+    // }
+    setIsDisabled(true)
+    // console.log(isProduct);
+  }
   return (
     <>
       {isActiveItem &&
@@ -66,7 +81,7 @@ export default function ProductDetails() {
                   <div>{item.price} تومان</div>
                 </div>
                 <div className='text-center mt-2'>
-                  <button className='rounded transition-all duration-500 shadow-md hover:shadow-orange-600 text-white bg-orange-500 hover:bg-orange-600 p-2'>افزودن به سبد خرید</button>
+                  <button disabled={isDisabled} className='rounded disabled:bg-dark disabled:text-whit hover:disabled:bg-dark hover:disabled:shadow-none disabled:cursor-not-allowed transition-all duration-500 shadow-md hover:shadow-orange-600 text-white bg-orange-500 hover:bg-orange-600 p-2' onClick={() => addToCard(item)}>{isDisabled ? "به سبد خرید افزوده شده !!!" : "افزودن به سبد خرید"}</button>
                 </div>
               </div>
             </div>
