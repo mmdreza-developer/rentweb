@@ -1,9 +1,12 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../../ComponentsPanel/Header/Header'
 import SidebarMenu from '../../ComponentsPanel/SidebarMenu/SidebarMenu'
 export const ContextPanel = createContext()
 export default function UserPanel() {
+  useEffect(()=>{
+    document.title="پنل کاربری"
+  },[])
   const [open, setOpen] = useState(false)
   return (
     <ContextPanel.Provider value={{

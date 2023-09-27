@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Login.css"
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { BsGoogle } from "react-icons/bs"
 export default function Login() {
+  useEffect(()=>{
+    document.title="ثبت نام و ورود"
+  },[])
   return (
     <div className='h-screen w-full flex justify-center items-center mt-10'>
       <div className='flex flex-col  rounded overflow-hidden ' style={{ width: "500px", height: "100vh" }}>

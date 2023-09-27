@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Product.css"
 import BreadCrumb from '../../Components/BreadCrumb/BreadCrumb'
 import Header from "../../Components/Header/Header"
 import Footer from "../../Components/Footer/Footer"
 import { NavLink, useParams, Link, Outlet } from 'react-router-dom'
 export default function Product() {
+  useEffect(()=>{
+    document.title="صفحه محصول"
+  },[])
   const params = useParams()
   // console.log(params);
   return (

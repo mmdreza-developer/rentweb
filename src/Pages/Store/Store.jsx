@@ -5,6 +5,9 @@ import BreadCrumb from '../../Components/BreadCrumb/BreadCrumb'
 import data from '../../data'
 import { contextData } from '../../ContextData/ContextData'
 export default function Store() {
+    useEffect(()=>{
+        document.title="سبد خرید"
+      },[])
     const { state, dispatch } = useContext(contextData)
     console.log(state);
     const removeProduct = (item) => {

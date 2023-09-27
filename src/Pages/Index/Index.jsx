@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from '../../Components/Card/Card'
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
@@ -9,6 +9,9 @@ import Services from '../../Components/Services/Services'
 import Tariffs from '../../Components/Tariffs/Tariffs'
 import data from '../../data'
 export default function Index() {
+  useEffect(()=>{
+    document.title="صفحه اصلی"
+  },[])
   return (
 
     <div className="w-full">
