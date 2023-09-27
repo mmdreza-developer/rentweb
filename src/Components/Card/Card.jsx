@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
 import { Link } from 'react-router-dom';
 
-export default memo(function Card({ img, title, desc, price, countSell,id }) {
+export default memo(function Card({ img, title, desc, price, countSell, id }) {
     return (
-        <div className='flex flex-col overflow-hidden m-4 pb-3 gap-y-4 rounded text-right shadow-md shadow-whiteSky'>
+        <Link to={`product-info/${id}/product-details`} className='flex flex-col overflow-hidden m-4 pb-3 gap-y-4 rounded text-right shadow-md shadow-whiteSky'>
             <div><img src={img} alt="" /></div>
             <div className='p-2'>
                 <div className="text-2xl text-dark">{title}</div>
@@ -26,7 +26,7 @@ export default memo(function Card({ img, title, desc, price, countSell,id }) {
                     <div className='text-sm'>تعداد فروش: {countSell}</div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 )

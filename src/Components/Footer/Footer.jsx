@@ -61,16 +61,16 @@ export default memo(
                 <span className='pb-2 text-xl text-dark border-b-2 border-gray'>نماد های اعتماد</span>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 mt-4 gap-2">
-                <div>
+                <div className='flex justify-center items-center'>
                   <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
                   <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
                   <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
                   <img src="/images/enamad.webp" alt="" width={100} />
                 </div>
               </div>
